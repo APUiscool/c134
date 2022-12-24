@@ -3,9 +3,9 @@ import pandas as pd
 
 rows = []
 with open('Stars.csv','r') as f:
-    csv_r = csv.reader(f)
-    for i in csv_r:
-        rows.append(i)
+    csv_read = csv.reader(f)
+    for row in csv_read:
+        rows.append(row)
 
 headers = rows[0]
 star_data = rows[1:]
